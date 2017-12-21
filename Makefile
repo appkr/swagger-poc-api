@@ -13,9 +13,9 @@ SPEC=http://localhost/docs/swagger.json
 #-------------------------------------------------------------------------------
 all: php javascript java
 clean: clean-php clean-javascript clean-java
-php: clean-php gen-php
-javascript: clean-javascript gen-javascript
-java: clean-java gen-java
+php: clean-php gen-php dist-php
+javascript: clean-javascript gen-javascript dist-javascript
+java: clean-java gen-java dist-java
 
 #-------------------------------------------------------------------------------
 # PHP
