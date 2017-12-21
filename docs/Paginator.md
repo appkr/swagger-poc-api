@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **perPage** | **Integer** | 페이지당 리소스 표시 개수 | 
 **currentPage** | **Integer** | 현재 페이지 번호 | 
 **totalPages** | **Integer** | 총 페이지 수 | 
-**links** | **Object** |  | 
+**links** | [**PaginatorLink**](PaginatorLink.md) |  | 
 
 
 

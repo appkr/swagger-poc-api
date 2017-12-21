@@ -26,7 +26,7 @@ import java.io.IOException;
 /**
  * AccessToken
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-21T16:13:04.142+09:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-21T18:16:07.108+09:00")
 public class AccessToken {
   @SerializedName("access_token")
   private String accessToken = null;
