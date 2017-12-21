@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **data** | [**List&lt;ReviewDto&gt;**](ReviewDto.md) |  | 
-**meta** | **Object** |  | 
+**meta** | [**Meta**](Meta.md) |  | 
 
 
 

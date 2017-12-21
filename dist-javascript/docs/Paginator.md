@@ -8,6 +8,6 @@ Name | Type | Description | Notes
 **perPage** | **Number** | 페이지당 리소스 표시 개수 | 
 **currentPage** | **Number** | 현재 페이지 번호 | 
 **totalPages** | **Number** | 총 페이지 수 | 
-**links** | **Object** |  | 
+**links** | [**PaginatorLink**](PaginatorLink.md) |  | 
 
 

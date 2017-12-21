@@ -13,6 +13,7 @@
 
 
 import ApiClient from '../ApiClient';
+import PaginatorLink from './PaginatorLink';
 
 
 
@@ -33,7 +34,7 @@ export default class Paginator {
     * @param perPage {Number} 페이지당 리소스 표시 개수
     * @param currentPage {Number} 현재 페이지 번호
     * @param totalPages {Number} 총 페이지 수
-    * @param links {Object} 
+    * @param links {module:model/PaginatorLink} 
     */
 
     constructor(total, count, perPage, currentPage, totalPages, links) {
@@ -78,7 +79,7 @@ export default class Paginator {
                 obj['total_pages'] = ApiClient.convertToType(data['total_pages'], 'Number');
             }
             if (data.hasOwnProperty('links')) {
-                obj['links'] = ApiClient.convertToType(data['links'], Object);
+                obj['links'] = PaginatorLink.constructFromObject(data['links']);
             }
         }
         return obj;
@@ -110,7 +111,7 @@ export default class Paginator {
     */
     total_pages = undefined;
     /**
-    * @member {Object} links
+    * @member {module:model/PaginatorLink} links
     */
     links = undefined;
 

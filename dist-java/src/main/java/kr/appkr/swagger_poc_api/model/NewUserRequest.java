@@ -27,7 +27,7 @@ import kr.appkr.swagger_poc_api.model.LoginRequest;
 /**
  * NewUserRequest
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-21T16:13:04.142+09:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-21T18:16:07.108+09:00")
 public class NewUserRequest {
   @SerializedName("email")
   private String email = null;

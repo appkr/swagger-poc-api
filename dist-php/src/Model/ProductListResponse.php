@@ -58,7 +58,7 @@ class ProductListResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'data' => '\Appkr\SwaggerPocApi\Model\ProductDto[]',
-        'meta' => 'object'
+        'meta' => '\Appkr\SwaggerPocApi\Model\Meta'
     ];
 
     /**
@@ -250,7 +250,7 @@ class ProductListResponse implements ModelInterface, ArrayAccess
     /**
      * Gets meta
      *
-     * @return object
+     * @return \Appkr\SwaggerPocApi\Model\Meta
      */
     public function getMeta()
     {
@@ -260,7 +260,7 @@ class ProductListResponse implements ModelInterface, ArrayAccess
     /**
      * Sets meta
      *
-     * @param object $meta meta
+     * @param \Appkr\SwaggerPocApi\Model\Meta $meta meta
      *
      * @return $this
      */

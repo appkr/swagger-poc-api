@@ -13,6 +13,7 @@
 
 
 import ApiClient from '../ApiClient';
+import Meta from './Meta';
 import ReviewDto from './ReviewDto';
 
 
@@ -30,7 +31,7 @@ export default class ReviewListResponse {
     * @alias module:model/ReviewListResponse
     * @class
     * @param data {Array.<module:model/ReviewDto>} 
-    * @param meta {Object} 
+    * @param meta {module:model/Meta} 
     */
 
     constructor(data, meta) {
@@ -63,7 +64,7 @@ export default class ReviewListResponse {
                 obj['data'] = ApiClient.convertToType(data['data'], [ReviewDto]);
             }
             if (data.hasOwnProperty('meta')) {
-                obj['meta'] = ApiClient.convertToType(data['meta'], Object);
+                obj['meta'] = Meta.constructFromObject(data['meta']);
             }
         }
         return obj;
@@ -74,7 +75,7 @@ export default class ReviewListResponse {
     */
     data = undefined;
     /**
-    * @member {Object} meta
+    * @member {module:model/Meta} meta
     */
     meta = undefined;
 

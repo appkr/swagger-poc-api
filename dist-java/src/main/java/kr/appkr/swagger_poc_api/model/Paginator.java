@@ -22,11 +22,12 @@ import com.google.gson.stream.JsonWriter;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
+import kr.appkr.swagger_poc_api.model.PaginatorLink;
 
 /**
  * Paginator
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-21T16:13:04.142+09:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-21T18:16:07.108+09:00")
 public class Paginator {
   @SerializedName("total")
   private Integer total = null;
@@ -44,7 +45,7 @@ public class Paginator {
   private Integer totalPages = null;
 
   @SerializedName("links")
-  private Object links = null;
+  private PaginatorLink links = null;
 
   public Paginator total(Integer total) {
     this.total = total;
@@ -136,7 +137,7 @@ public class Paginator {
     this.totalPages = totalPages;
   }
 
-  public Paginator links(Object links) {
+  public Paginator links(PaginatorLink links) {
     this.links = links;
     return this;
   }
@@ -146,11 +147,11 @@ public class Paginator {
    * @return links
   **/
   @ApiModelProperty(required = true, value = "")
-  public Object getLinks() {
+  public PaginatorLink getLinks() {
     return links;
   }
 
-  public void setLinks(Object links) {
+  public void setLinks(PaginatorLink links) {
     this.links = links;
   }
 

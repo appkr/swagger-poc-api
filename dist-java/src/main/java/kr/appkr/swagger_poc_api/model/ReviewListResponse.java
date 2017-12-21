@@ -24,18 +24,19 @@ import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import kr.appkr.swagger_poc_api.model.Meta;
 import kr.appkr.swagger_poc_api.model.ReviewDto;
 
 /**
  * ReviewListResponse
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-21T16:13:04.142+09:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-21T18:16:07.108+09:00")
 public class ReviewListResponse {
   @SerializedName("data")
   private List<ReviewDto> data = new ArrayList<ReviewDto>();
 
   @SerializedName("meta")
-  private Object meta = null;
+  private Meta meta = null;
 
   public ReviewListResponse data(List<ReviewDto> data) {
     this.data = data;
@@ -60,7 +61,7 @@ public class ReviewListResponse {
     this.data = data;
   }
 
-  public ReviewListResponse meta(Object meta) {
+  public ReviewListResponse meta(Meta meta) {
     this.meta = meta;
     return this;
   }
@@ -70,11 +71,11 @@ public class ReviewListResponse {
    * @return meta
   **/
   @ApiModelProperty(required = true, value = "")
-  public Object getMeta() {
+  public Meta getMeta() {
     return meta;
   }
 
-  public void setMeta(Object meta) {
+  public void setMeta(Meta meta) {
     this.meta = meta;
   }
 

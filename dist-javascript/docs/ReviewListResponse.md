@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **data** | [**[ReviewDto]**](ReviewDto.md) |  | 
-**meta** | **Object** |  | 
+**meta** | [**Meta**](Meta.md) |  | 
 
 

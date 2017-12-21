@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**pagination** | **Object** |  | 
+**pagination** | [**Paginator**](Paginator.md) |  | 
 
 
 

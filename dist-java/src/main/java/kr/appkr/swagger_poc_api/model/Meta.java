@@ -22,16 +22,17 @@ import com.google.gson.stream.JsonWriter;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
+import kr.appkr.swagger_poc_api.model.Paginator;
 
 /**
  * Meta
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-21T16:13:04.142+09:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-21T18:16:07.108+09:00")
 public class Meta {
   @SerializedName("pagination")
-  private Object pagination = null;
+  private Paginator pagination = null;
 
-  public Meta pagination(Object pagination) {
+  public Meta pagination(Paginator pagination) {
     this.pagination = pagination;
     return this;
   }
@@ -41,11 +42,11 @@ public class Meta {
    * @return pagination
   **/
   @ApiModelProperty(required = true, value = "")
-  public Object getPagination() {
+  public Paginator getPagination() {
     return pagination;
   }
 
-  public void setPagination(Object pagination) {
+  public void setPagination(Paginator pagination) {
     this.pagination = pagination;
   }
 
