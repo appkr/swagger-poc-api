@@ -1,0 +1,12 @@
+{
+  "variableNamingConvention": "camelCase",
+  "packagePath": ".",
+  "invokerPackage": "Appkr\\SwaggerPocApi",
+  "modelPackage": "Model",
+  "apiPackage": "Service",
+  "srcBasePath": "src/",
+  "gitUserId": "appkr",
+  "gitRepoId": "swagger-poc-api",
+  "composerVendorName": "appkr",
+  "composerProjectName": "swagger-poc-api"
+}

@@ -1,0 +1,5 @@
+{
+  "modelPackage": "kr.appkr.swagger_poc_api.model",
+  "apiPackage": "kr.appkr.swagger_poc_api.service",
+  "invokerPackage": "kr.appkr.swagger_poc-api"
+}
