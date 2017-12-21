@@ -57,7 +57,7 @@ class Meta implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pagination' => 'object'
+        'pagination' => '\Appkr\SwaggerPocApi\Model\Paginator'
     ];
 
     /**
@@ -214,7 +214,7 @@ class Meta implements ModelInterface, ArrayAccess
     /**
      * Gets pagination
      *
-     * @return object
+     * @return \Appkr\SwaggerPocApi\Model\Paginator
      */
     public function getPagination()
     {
@@ -224,7 +224,7 @@ class Meta implements ModelInterface, ArrayAccess
     /**
      * Sets pagination
      *
-     * @param object $pagination pagination
+     * @param \Appkr\SwaggerPocApi\Model\Paginator $pagination pagination
      *
      * @return $this
      */

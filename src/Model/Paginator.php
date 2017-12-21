@@ -62,7 +62,7 @@ class Paginator implements ModelInterface, ArrayAccess
         'perPage' => 'int',
         'currentPage' => 'int',
         'totalPages' => 'int',
-        'links' => 'object'
+        'links' => '\Appkr\SwaggerPocApi\Model\PaginatorLink'
     ];
 
     /**
@@ -394,7 +394,7 @@ class Paginator implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return object
+     * @return \Appkr\SwaggerPocApi\Model\PaginatorLink
      */
     public function getLinks()
     {
@@ -404,7 +404,7 @@ class Paginator implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param object $links links
+     * @param \Appkr\SwaggerPocApi\Model\PaginatorLink $links links
      *
      * @return $this
      */

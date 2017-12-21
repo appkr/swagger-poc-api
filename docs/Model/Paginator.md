@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **perPage** | **int** | 페이지당 리소스 표시 개수 | 
 **currentPage** | **int** | 현재 페이지 번호 | 
 **totalPages** | **int** | 총 페이지 수 | 
-**links** | **object** |  | 
+**links** | [**\Appkr\SwaggerPocApi\Model\PaginatorLink**](PaginatorLink.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
