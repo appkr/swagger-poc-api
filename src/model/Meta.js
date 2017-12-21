@@ -13,6 +13,7 @@
 
 
 import ApiClient from '../ApiClient';
+import Paginator from './Paginator';
 
 
 
@@ -28,7 +29,7 @@ export default class Meta {
     * Constructs a new <code>Meta</code>.
     * @alias module:model/Meta
     * @class
-    * @param pagination {Object} 
+    * @param pagination {module:model/Paginator} 
     */
 
     constructor(pagination) {
@@ -58,14 +59,14 @@ export default class Meta {
             
 
             if (data.hasOwnProperty('pagination')) {
-                obj['pagination'] = ApiClient.convertToType(data['pagination'], Object);
+                obj['pagination'] = Paginator.constructFromObject(data['pagination']);
             }
         }
         return obj;
     }
 
     /**
-    * @member {Object} pagination
+    * @member {module:model/Paginator} pagination
     */
     pagination = undefined;
 

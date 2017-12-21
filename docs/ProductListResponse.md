@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **data** | [**[ProductDto]**](ProductDto.md) |  | 
-**meta** | **Object** |  | 
+**meta** | [**Meta**](Meta.md) |  | 
 
 

@@ -13,6 +13,7 @@
 
 
 import ApiClient from '../ApiClient';
+import Meta from './Meta';
 import ProductDto from './ProductDto';
 
 
@@ -30,7 +31,7 @@ export default class ProductListResponse {
     * @alias module:model/ProductListResponse
     * @class
     * @param data {Array.<module:model/ProductDto>} 
-    * @param meta {Object} 
+    * @param meta {module:model/Meta} 
     */
 
     constructor(data, meta) {
@@ -63,7 +64,7 @@ export default class ProductListResponse {
                 obj['data'] = ApiClient.convertToType(data['data'], [ProductDto]);
             }
             if (data.hasOwnProperty('meta')) {
-                obj['meta'] = ApiClient.convertToType(data['meta'], Object);
+                obj['meta'] = Meta.constructFromObject(data['meta']);
             }
         }
         return obj;
@@ -74,7 +75,7 @@ export default class ProductListResponse {
     */
     data = undefined;
     /**
-    * @member {Object} meta
+    * @member {module:model/Meta} meta
     */
     meta = undefined;
 
