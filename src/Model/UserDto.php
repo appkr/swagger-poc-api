@@ -61,7 +61,8 @@ class UserDto implements ModelInterface, ArrayAccess
         'email' => 'string',
         'password' => 'string',
         'createdAt' => 'string',
-        'updatedAt' => 'string'
+        'updatedAt' => 'string',
+        'id' => 'int'
     ];
 
     /**
@@ -74,7 +75,8 @@ class UserDto implements ModelInterface, ArrayAccess
         'email' => null,
         'password' => null,
         'createdAt' => null,
-        'updatedAt' => null
+        'updatedAt' => null,
+        'id' => 'int64'
     ];
 
     /**
@@ -108,7 +110,8 @@ class UserDto implements ModelInterface, ArrayAccess
         'email' => 'email',
         'password' => 'password',
         'createdAt' => 'created_at',
-        'updatedAt' => 'updated_at'
+        'updatedAt' => 'updated_at',
+        'id' => 'id'
     ];
 
     /**
@@ -121,7 +124,8 @@ class UserDto implements ModelInterface, ArrayAccess
         'email' => 'setEmail',
         'password' => 'setPassword',
         'createdAt' => 'setCreatedAt',
-        'updatedAt' => 'setUpdatedAt'
+        'updatedAt' => 'setUpdatedAt',
+        'id' => 'setId'
     ];
 
     /**
@@ -134,7 +138,8 @@ class UserDto implements ModelInterface, ArrayAccess
         'email' => 'getEmail',
         'password' => 'getPassword',
         'createdAt' => 'getCreatedAt',
-        'updatedAt' => 'getUpdatedAt'
+        'updatedAt' => 'getUpdatedAt',
+        'id' => 'getId'
     ];
 
     /**
@@ -202,6 +207,7 @@ class UserDto implements ModelInterface, ArrayAccess
         $this->container['password'] = isset($data['password']) ? $data['password'] : null;
         $this->container['createdAt'] = isset($data['createdAt']) ? $data['createdAt'] : null;
         $this->container['updatedAt'] = isset($data['updatedAt']) ? $data['updatedAt'] : null;
+        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
     }
 
     /**
@@ -357,6 +363,30 @@ class UserDto implements ModelInterface, ArrayAccess
     public function setUpdatedAt($updatedAt)
     {
         $this->container['updatedAt'] = $updatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Gets id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->container['id'];
+    }
+
+    /**
+     * Sets id
+     *
+     * @param int $id ID
+     *
+     * @return $this
+     */
+    public function setId($id)
+    {
+        $this->container['id'] = $id;
 
         return $this;
     }

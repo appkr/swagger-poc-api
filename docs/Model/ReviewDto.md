@@ -7,6 +7,8 @@ Name | Type | Description | Notes
 **content** | **string** | 본문 | 
 **createdAt** | **string** | 최초 생성 시각 | [optional] 
 **updatedAt** | **string** | 최종 수정 시각 | [optional] 
+**author** | [**\Appkr\SwaggerPocApi\Model\UserDto**](UserDto.md) |  | [optional] 
+**product** | [**\Appkr\SwaggerPocApi\Model\ProductDto**](ProductDto.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

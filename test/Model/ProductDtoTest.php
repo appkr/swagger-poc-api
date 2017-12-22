@@ -118,4 +118,18 @@ class ProductDtoTest extends \PHPUnit_Framework_TestCase
     public function testPropertyUpdatedAt()
     {
     }
+
+    /**
+     * Test attribute "id"
+     */
+    public function testPropertyId()
+    {
+    }
+
+    /**
+     * Test attribute "version"
+     */
+    public function testPropertyVersion()
+    {
+    }
 }

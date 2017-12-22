@@ -90,4 +90,11 @@ class NewUserRequestTest extends \PHPUnit_Framework_TestCase
     public function testPropertyPassword()
     {
     }
+
+    /**
+     * Test attribute "name"
+     */
+    public function testPropertyName()
+    {
+    }
 }

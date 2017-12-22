@@ -60,7 +60,9 @@ class ReviewDto implements ModelInterface, ArrayAccess
         'title' => 'string',
         'content' => 'string',
         'createdAt' => 'string',
-        'updatedAt' => 'string'
+        'updatedAt' => 'string',
+        'author' => '\Appkr\SwaggerPocApi\Model\UserDto',
+        'product' => '\Appkr\SwaggerPocApi\Model\ProductDto'
     ];
 
     /**
@@ -72,7 +74,9 @@ class ReviewDto implements ModelInterface, ArrayAccess
         'title' => null,
         'content' => null,
         'createdAt' => null,
-        'updatedAt' => null
+        'updatedAt' => null,
+        'author' => null,
+        'product' => null
     ];
 
     /**
@@ -105,7 +109,9 @@ class ReviewDto implements ModelInterface, ArrayAccess
         'title' => 'title',
         'content' => 'content',
         'createdAt' => 'created_at',
-        'updatedAt' => 'updated_at'
+        'updatedAt' => 'updated_at',
+        'author' => 'author',
+        'product' => 'product'
     ];
 
     /**
@@ -117,7 +123,9 @@ class ReviewDto implements ModelInterface, ArrayAccess
         'title' => 'setTitle',
         'content' => 'setContent',
         'createdAt' => 'setCreatedAt',
-        'updatedAt' => 'setUpdatedAt'
+        'updatedAt' => 'setUpdatedAt',
+        'author' => 'setAuthor',
+        'product' => 'setProduct'
     ];
 
     /**
@@ -129,7 +137,9 @@ class ReviewDto implements ModelInterface, ArrayAccess
         'title' => 'getTitle',
         'content' => 'getContent',
         'createdAt' => 'getCreatedAt',
-        'updatedAt' => 'getUpdatedAt'
+        'updatedAt' => 'getUpdatedAt',
+        'author' => 'getAuthor',
+        'product' => 'getProduct'
     ];
 
     /**
@@ -196,6 +206,8 @@ class ReviewDto implements ModelInterface, ArrayAccess
         $this->container['content'] = isset($data['content']) ? $data['content'] : null;
         $this->container['createdAt'] = isset($data['createdAt']) ? $data['createdAt'] : null;
         $this->container['updatedAt'] = isset($data['updatedAt']) ? $data['updatedAt'] : null;
+        $this->container['author'] = isset($data['author']) ? $data['author'] : null;
+        $this->container['product'] = isset($data['product']) ? $data['product'] : null;
     }
 
     /**
@@ -327,6 +339,54 @@ class ReviewDto implements ModelInterface, ArrayAccess
     public function setUpdatedAt($updatedAt)
     {
         $this->container['updatedAt'] = $updatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Gets author
+     *
+     * @return \Appkr\SwaggerPocApi\Model\UserDto
+     */
+    public function getAuthor()
+    {
+        return $this->container['author'];
+    }
+
+    /**
+     * Sets author
+     *
+     * @param \Appkr\SwaggerPocApi\Model\UserDto $author author
+     *
+     * @return $this
+     */
+    public function setAuthor($author)
+    {
+        $this->container['author'] = $author;
+
+        return $this;
+    }
+
+    /**
+     * Gets product
+     *
+     * @return \Appkr\SwaggerPocApi\Model\ProductDto
+     */
+    public function getProduct()
+    {
+        return $this->container['product'];
+    }
+
+    /**
+     * Sets product
+     *
+     * @param \Appkr\SwaggerPocApi\Model\ProductDto $product product
+     *
+     * @return $this
+     */
+    public function setProduct($product)
+    {
+        $this->container['product'] = $product;
 
         return $this;
     }

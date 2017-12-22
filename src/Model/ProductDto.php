@@ -62,7 +62,9 @@ class ProductDto implements ModelInterface, ArrayAccess
         'price' => 'int',
         'description' => 'string',
         'createdAt' => 'string',
-        'updatedAt' => 'string'
+        'updatedAt' => 'string',
+        'id' => 'int',
+        'version' => 'int'
     ];
 
     /**
@@ -76,7 +78,9 @@ class ProductDto implements ModelInterface, ArrayAccess
         'price' => 'int64',
         'description' => null,
         'createdAt' => null,
-        'updatedAt' => null
+        'updatedAt' => null,
+        'id' => 'int64',
+        'version' => 'int32'
     ];
 
     /**
@@ -111,7 +115,9 @@ class ProductDto implements ModelInterface, ArrayAccess
         'price' => 'price',
         'description' => 'description',
         'createdAt' => 'created_at',
-        'updatedAt' => 'updated_at'
+        'updatedAt' => 'updated_at',
+        'id' => 'id',
+        'version' => 'version'
     ];
 
     /**
@@ -125,7 +131,9 @@ class ProductDto implements ModelInterface, ArrayAccess
         'price' => 'setPrice',
         'description' => 'setDescription',
         'createdAt' => 'setCreatedAt',
-        'updatedAt' => 'setUpdatedAt'
+        'updatedAt' => 'setUpdatedAt',
+        'id' => 'setId',
+        'version' => 'setVersion'
     ];
 
     /**
@@ -139,7 +147,9 @@ class ProductDto implements ModelInterface, ArrayAccess
         'price' => 'getPrice',
         'description' => 'getDescription',
         'createdAt' => 'getCreatedAt',
-        'updatedAt' => 'getUpdatedAt'
+        'updatedAt' => 'getUpdatedAt',
+        'id' => 'getId',
+        'version' => 'getVersion'
     ];
 
     /**
@@ -208,6 +218,8 @@ class ProductDto implements ModelInterface, ArrayAccess
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['createdAt'] = isset($data['createdAt']) ? $data['createdAt'] : null;
         $this->container['updatedAt'] = isset($data['updatedAt']) ? $data['updatedAt'] : null;
+        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
+        $this->container['version'] = isset($data['version']) ? $data['version'] : null;
     }
 
     /**
@@ -399,6 +411,54 @@ class ProductDto implements ModelInterface, ArrayAccess
     public function setUpdatedAt($updatedAt)
     {
         $this->container['updatedAt'] = $updatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Gets id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->container['id'];
+    }
+
+    /**
+     * Sets id
+     *
+     * @param int $id ID
+     *
+     * @return $this
+     */
+    public function setId($id)
+    {
+        $this->container['id'] = $id;
+
+        return $this;
+    }
+
+    /**
+     * Gets version
+     *
+     * @return int
+     */
+    public function getVersion()
+    {
+        return $this->container['version'];
+    }
+
+    /**
+     * Sets version
+     *
+     * @param int $version 버전
+     *
+     * @return $this
+     */
+    public function setVersion($version)
+    {
+        $this->container['version'] = $version;
 
         return $this;
     }
