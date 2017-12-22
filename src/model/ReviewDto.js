@@ -70,6 +70,12 @@ export default class ReviewDto {
             if (data.hasOwnProperty('product')) {
                 obj['product'] = ProductDto.constructFromObject(data['product']);
             }
+            if (data.hasOwnProperty('id')) {
+                obj['id'] = ApiClient.convertToType(data['id'], 'Number');
+            }
+            if (data.hasOwnProperty('version')) {
+                obj['version'] = ApiClient.convertToType(data['version'], 'Number');
+            }
         }
         return obj;
     }
@@ -82,6 +88,16 @@ export default class ReviewDto {
     * @member {module:model/ProductDto} product
     */
     product = undefined;
+    /**
+    * ID
+    * @member {Number} id
+    */
+    id = undefined;
+    /**
+    * 버전
+    * @member {Number} version
+    */
+    version = undefined;
 
 
     // Implement NewReviewRequest interface:
