@@ -62,7 +62,9 @@ class ReviewDto implements ModelInterface, ArrayAccess
         'createdAt' => 'string',
         'updatedAt' => 'string',
         'author' => '\Appkr\SwaggerPocApi\Model\UserDto',
-        'product' => '\Appkr\SwaggerPocApi\Model\ProductDto'
+        'product' => '\Appkr\SwaggerPocApi\Model\ProductDto',
+        'id' => 'int',
+        'version' => 'int'
     ];
 
     /**
@@ -76,7 +78,9 @@ class ReviewDto implements ModelInterface, ArrayAccess
         'createdAt' => null,
         'updatedAt' => null,
         'author' => null,
-        'product' => null
+        'product' => null,
+        'id' => 'int64',
+        'version' => 'int32'
     ];
 
     /**
@@ -111,7 +115,9 @@ class ReviewDto implements ModelInterface, ArrayAccess
         'createdAt' => 'created_at',
         'updatedAt' => 'updated_at',
         'author' => 'author',
-        'product' => 'product'
+        'product' => 'product',
+        'id' => 'id',
+        'version' => 'version'
     ];
 
     /**
@@ -125,7 +131,9 @@ class ReviewDto implements ModelInterface, ArrayAccess
         'createdAt' => 'setCreatedAt',
         'updatedAt' => 'setUpdatedAt',
         'author' => 'setAuthor',
-        'product' => 'setProduct'
+        'product' => 'setProduct',
+        'id' => 'setId',
+        'version' => 'setVersion'
     ];
 
     /**
@@ -139,7 +147,9 @@ class ReviewDto implements ModelInterface, ArrayAccess
         'createdAt' => 'getCreatedAt',
         'updatedAt' => 'getUpdatedAt',
         'author' => 'getAuthor',
-        'product' => 'getProduct'
+        'product' => 'getProduct',
+        'id' => 'getId',
+        'version' => 'getVersion'
     ];
 
     /**
@@ -208,6 +218,8 @@ class ReviewDto implements ModelInterface, ArrayAccess
         $this->container['updatedAt'] = isset($data['updatedAt']) ? $data['updatedAt'] : null;
         $this->container['author'] = isset($data['author']) ? $data['author'] : null;
         $this->container['product'] = isset($data['product']) ? $data['product'] : null;
+        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
+        $this->container['version'] = isset($data['version']) ? $data['version'] : null;
     }
 
     /**
@@ -387,6 +399,54 @@ class ReviewDto implements ModelInterface, ArrayAccess
     public function setProduct($product)
     {
         $this->container['product'] = $product;
+
+        return $this;
+    }
+
+    /**
+     * Gets id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->container['id'];
+    }
+
+    /**
+     * Sets id
+     *
+     * @param int $id ID
+     *
+     * @return $this
+     */
+    public function setId($id)
+    {
+        $this->container['id'] = $id;
+
+        return $this;
+    }
+
+    /**
+     * Gets version
+     *
+     * @return int
+     */
+    public function getVersion()
+    {
+        return $this->container['version'];
+    }
+
+    /**
+     * Sets version
+     *
+     * @param int $version 버전
+     *
+     * @return $this
+     */
+    public function setVersion($version)
+    {
+        $this->container['version'] = $version;
 
         return $this;
     }
