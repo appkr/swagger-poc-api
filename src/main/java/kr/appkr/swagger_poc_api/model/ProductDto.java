@@ -23,12 +23,11 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
 import kr.appkr.swagger_poc_api.model.NewProductRequest;
-import org.threeten.bp.OffsetDateTime;
 
 /**
  * ProductDto
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-21T18:16:07.108+09:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-22T14:18:43.519+09:00")
 public class ProductDto {
   @SerializedName("title")
   private String title = null;
@@ -43,10 +42,10 @@ public class ProductDto {
   private String description = null;
 
   @SerializedName("created_at")
-  private OffsetDateTime createdAt = null;
+  private String createdAt = null;
 
   @SerializedName("updated_at")
-  private OffsetDateTime updatedAt = null;
+  private String updatedAt = null;
 
   public ProductDto title(String title) {
     this.title = title;
@@ -120,7 +119,7 @@ public class ProductDto {
     this.description = description;
   }
 
-  public ProductDto createdAt(OffsetDateTime createdAt) {
+  public ProductDto createdAt(String createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -130,15 +129,15 @@ public class ProductDto {
    * @return createdAt
   **/
   @ApiModelProperty(example = "2017-03-01T00:00:00+0900", value = "최초 생성 시각")
-  public OffsetDateTime getCreatedAt() {
+  public String getCreatedAt() {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(String createdAt) {
     this.createdAt = createdAt;
   }
 
-  public ProductDto updatedAt(OffsetDateTime updatedAt) {
+  public ProductDto updatedAt(String updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -148,11 +147,11 @@ public class ProductDto {
    * @return updatedAt
   **/
   @ApiModelProperty(example = "2017-03-01T00:00:00+0900", value = "최종 수정 시각")
-  public OffsetDateTime getUpdatedAt() {
+  public String getUpdatedAt() {
     return updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
+  public void setUpdatedAt(String updatedAt) {
     this.updatedAt = updatedAt;
   }
 

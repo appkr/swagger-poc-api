@@ -93,7 +93,7 @@ public class ProductApiTest {
     }
     
     /**
-     * 상품을 수정합니다 (ON PURPOSE 10 SEC DELAY TO TEST PESSIMISTIC/OPTIMISTIC DB LOCK).
+     * 상품을 수정합니다.
      *
      * 
      *

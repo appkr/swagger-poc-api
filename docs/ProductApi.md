@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**createProduct**](ProductApi.md#createProduct) | **POST** /v1/products | 새 상품을 등록합니다.
 [**deleteProduct**](ProductApi.md#deleteProduct) | **DELETE** /v1/products/{productId} | 상품을 삭제합니다.
 [**listProducts**](ProductApi.md#listProducts) | **GET** /v1/products | 상품 목록을 조회합니다.
-[**updateProduct**](ProductApi.md#updateProduct) | **PUT** /v1/products/{productId} | 상품을 수정합니다 (ON PURPOSE 10 SEC DELAY TO TEST PESSIMISTIC/OPTIMISTIC DB LOCK).
+[**updateProduct**](ProductApi.md#updateProduct) | **PUT** /v1/products/{productId} | 상품을 수정합니다.
 
 
 <a name="createProduct"></a>
@@ -160,7 +160,7 @@ No authorization required
 # **updateProduct**
 > ProductDto updateProduct(authorization, productId, body)
 
-상품을 수정합니다 (ON PURPOSE 10 SEC DELAY TO TEST PESSIMISTIC/OPTIMISTIC DB LOCK).
+상품을 수정합니다.
 
 ### Example
 ```java

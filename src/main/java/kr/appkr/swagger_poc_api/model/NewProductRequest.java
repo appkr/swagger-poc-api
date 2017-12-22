@@ -26,7 +26,7 @@ import java.io.IOException;
 /**
  * NewProductRequest
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-21T18:16:07.108+09:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-22T14:18:43.519+09:00")
 public class NewProductRequest {
   @SerializedName("title")
   private String title = null;

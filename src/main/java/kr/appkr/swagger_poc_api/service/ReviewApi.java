@@ -591,7 +591,7 @@ public class ReviewApi {
     }
 
     /**
-     * 리뷰를 수정합니다 (ON PURPOSE 10 SEC DELAY TO TEST PESSIMISTIC/OPTIMISTIC DB LOCK).
+     * 리뷰를 수정합니다.
      * 
      * @param authorization 액세스 토큰 (required)
      * @param productId  (required)
@@ -606,7 +606,7 @@ public class ReviewApi {
     }
 
     /**
-     * 리뷰를 수정합니다 (ON PURPOSE 10 SEC DELAY TO TEST PESSIMISTIC/OPTIMISTIC DB LOCK).
+     * 리뷰를 수정합니다.
      * 
      * @param authorization 액세스 토큰 (required)
      * @param productId  (required)
@@ -622,7 +622,7 @@ public class ReviewApi {
     }
 
     /**
-     * 리뷰를 수정합니다 (ON PURPOSE 10 SEC DELAY TO TEST PESSIMISTIC/OPTIMISTIC DB LOCK). (asynchronously)
+     * 리뷰를 수정합니다. (asynchronously)
      * 
      * @param authorization 액세스 토큰 (required)
      * @param productId  (required)
