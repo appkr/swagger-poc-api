@@ -62,10 +62,18 @@ export default class UserDto {
             
             NewUserRequest.constructFromObject(data, obj);Timestamp.constructFromObject(data, obj);
 
+            if (data.hasOwnProperty('id')) {
+                obj['id'] = ApiClient.convertToType(data['id'], 'Number');
+            }
         }
         return obj;
     }
 
+    /**
+    * ID
+    * @member {Number} id
+    */
+    id = undefined;
 
 
     // Implement NewUserRequest interface:
@@ -79,6 +87,11 @@ export default class UserDto {
     * @member {String} password
     */
     password = undefined;
+/**
+    * 사용자 이름
+    * @member {String} name
+    */
+    name = undefined;
 
     // Implement Timestamp interface:
     /**

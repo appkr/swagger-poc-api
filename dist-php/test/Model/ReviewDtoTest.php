@@ -104,4 +104,18 @@ class ReviewDtoTest extends \PHPUnit_Framework_TestCase
     public function testPropertyUpdatedAt()
     {
     }
+
+    /**
+     * Test attribute "author"
+     */
+    public function testPropertyAuthor()
+    {
+    }
+
+    /**
+     * Test attribute "product"
+     */
+    public function testPropertyProduct()
+    {
+    }
 }

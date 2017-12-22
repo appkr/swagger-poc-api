@@ -27,7 +27,7 @@ import kr.appkr.swagger_poc_api.model.NewUserRequest;
 /**
  * UserDto
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-22T15:01:40.460+09:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-22T15:22:50.443+09:00")
 public class UserDto {
   @SerializedName("name")
   private String name = null;
@@ -43,6 +43,9 @@ public class UserDto {
 
   @SerializedName("updated_at")
   private String updatedAt = null;
+
+  @SerializedName("id")
+  private Long id = null;
 
   public UserDto name(String name) {
     this.name = name;
@@ -134,6 +137,24 @@ public class UserDto {
     this.updatedAt = updatedAt;
   }
 
+  public UserDto id(Long id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * ID
+   * @return id
+  **/
+  @ApiModelProperty(example = "6523879503", value = "ID")
+  public Long getId() {
+    return id;
+  }
+
+  public void setId(Long id) {
+    this.id = id;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -148,12 +169,13 @@ public class UserDto {
         Objects.equals(this.email, userDto.email) &&
         Objects.equals(this.password, userDto.password) &&
         Objects.equals(this.createdAt, userDto.createdAt) &&
-        Objects.equals(this.updatedAt, userDto.updatedAt);
+        Objects.equals(this.updatedAt, userDto.updatedAt) &&
+        Objects.equals(this.id, userDto.id);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, email, password, createdAt, updatedAt);
+    return Objects.hash(name, email, password, createdAt, updatedAt, id);
   }
 
 
@@ -167,6 +189,7 @@ public class UserDto {
     sb.append("    password: ").append(toIndentedString(password)).append("\n");
     sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
     sb.append("    updatedAt: ").append(toIndentedString(updatedAt)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("}");
     return sb.toString();
   }

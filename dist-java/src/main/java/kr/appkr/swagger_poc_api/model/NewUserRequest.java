@@ -27,13 +27,16 @@ import kr.appkr.swagger_poc_api.model.LoginRequest;
 /**
  * NewUserRequest
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-22T15:01:40.460+09:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-22T15:22:50.443+09:00")
 public class NewUserRequest {
   @SerializedName("email")
   private String email = null;
 
   @SerializedName("password")
   private String password = null;
+
+  @SerializedName("name")
+  private String name = null;
 
   public NewUserRequest email(String email) {
     this.email = email;
@@ -71,6 +74,24 @@ public class NewUserRequest {
     this.password = password;
   }
 
+  public NewUserRequest name(String name) {
+    this.name = name;
+    return this;
+  }
+
+   /**
+   * 사용자 이름
+   * @return name
+  **/
+  @ApiModelProperty(example = "User", value = "사용자 이름")
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -82,12 +103,13 @@ public class NewUserRequest {
     }
     NewUserRequest newUserRequest = (NewUserRequest) o;
     return Objects.equals(this.email, newUserRequest.email) &&
-        Objects.equals(this.password, newUserRequest.password);
+        Objects.equals(this.password, newUserRequest.password) &&
+        Objects.equals(this.name, newUserRequest.name);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(email, password);
+    return Objects.hash(email, password, name);
   }
 
 
@@ -98,6 +120,7 @@ public class NewUserRequest {
     
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("    password: ").append(toIndentedString(password)).append("\n");
+    sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("}");
     return sb.toString();
   }

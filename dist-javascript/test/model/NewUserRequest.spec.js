@@ -54,6 +54,12 @@
       //expect(instance).to.be.a(DbLockPoc.NewUserRequest);
     });
 
+    it('should have the property name (base name: "name")', function() {
+      // uncomment below and update the code to test the property name
+      //var instane = new DbLockPoc.NewUserRequest();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

@@ -64,10 +64,26 @@ export default class ProductDto {
             
             NewProductRequest.constructFromObject(data, obj);Timestamp.constructFromObject(data, obj);
 
+            if (data.hasOwnProperty('id')) {
+                obj['id'] = ApiClient.convertToType(data['id'], 'Number');
+            }
+            if (data.hasOwnProperty('version')) {
+                obj['version'] = ApiClient.convertToType(data['version'], 'Number');
+            }
         }
         return obj;
     }
 
+    /**
+    * ID
+    * @member {Number} id
+    */
+    id = undefined;
+    /**
+    * 버전
+    * @member {Number} version
+    */
+    version = undefined;
 
 
     // Implement NewProductRequest interface:

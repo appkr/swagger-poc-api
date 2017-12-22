@@ -111,4 +111,11 @@ class UserDtoTest extends \PHPUnit_Framework_TestCase
     public function testPropertyUpdatedAt()
     {
     }
+
+    /**
+     * Test attribute "id"
+     */
+    public function testPropertyId()
+    {
+    }
 }

@@ -58,7 +58,8 @@ class NewUserRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'email' => 'string',
-        'password' => 'string'
+        'password' => 'string',
+        'name' => 'string'
     ];
 
     /**
@@ -68,7 +69,8 @@ class NewUserRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'email' => null,
-        'password' => null
+        'password' => null,
+        'name' => null
     ];
 
     /**
@@ -99,7 +101,8 @@ class NewUserRequest implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'email' => 'email',
-        'password' => 'password'
+        'password' => 'password',
+        'name' => 'name'
     ];
 
     /**
@@ -109,7 +112,8 @@ class NewUserRequest implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'email' => 'setEmail',
-        'password' => 'setPassword'
+        'password' => 'setPassword',
+        'name' => 'setName'
     ];
 
     /**
@@ -119,7 +123,8 @@ class NewUserRequest implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'email' => 'getEmail',
-        'password' => 'getPassword'
+        'password' => 'getPassword',
+        'name' => 'getName'
     ];
 
     /**
@@ -184,6 +189,7 @@ class NewUserRequest implements ModelInterface, ArrayAccess
     {
         $this->container['email'] = isset($data['email']) ? $data['email'] : null;
         $this->container['password'] = isset($data['password']) ? $data['password'] : null;
+        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
     }
 
     /**
@@ -267,6 +273,30 @@ class NewUserRequest implements ModelInterface, ArrayAccess
     public function setPassword($password)
     {
         $this->container['password'] = $password;
+
+        return $this;
+    }
+
+    /**
+     * Gets name
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->container['name'];
+    }
+
+    /**
+     * Sets name
+     *
+     * @param string $name 사용자 이름
+     *
+     * @return $this
+     */
+    public function setName($name)
+    {
+        $this->container['name'] = $name;
 
         return $this;
     }

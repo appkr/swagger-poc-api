@@ -54,6 +54,18 @@
       //expect(instance).to.be.a(DbLockPoc.ReviewDto);
     });
 
+    it('should have the property author (base name: "author")', function() {
+      // uncomment below and update the code to test the property author
+      //var instane = new DbLockPoc.ReviewDto();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property product (base name: "product")', function() {
+      // uncomment below and update the code to test the property product
+      //var instane = new DbLockPoc.ReviewDto();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

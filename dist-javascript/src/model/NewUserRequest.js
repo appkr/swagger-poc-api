@@ -60,10 +60,18 @@ export default class NewUserRequest {
             
             LoginRequest.constructFromObject(data, obj);
 
+            if (data.hasOwnProperty('name')) {
+                obj['name'] = ApiClient.convertToType(data['name'], 'String');
+            }
         }
         return obj;
     }
 
+    /**
+    * 사용자 이름
+    * @member {String} name
+    */
+    name = undefined;
 
 
     // Implement LoginRequest interface:
