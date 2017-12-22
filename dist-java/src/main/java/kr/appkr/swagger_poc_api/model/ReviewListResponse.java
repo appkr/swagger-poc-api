@@ -30,7 +30,7 @@ import kr.appkr.swagger_poc_api.model.ReviewDto;
 /**
  * ReviewListResponse
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-21T18:16:07.108+09:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-22T14:18:43.519+09:00")
 public class ReviewListResponse {
   @SerializedName("data")
   private List<ReviewDto> data = new ArrayList<ReviewDto>();

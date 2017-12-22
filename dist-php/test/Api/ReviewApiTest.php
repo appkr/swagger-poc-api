@@ -104,7 +104,7 @@ class ReviewApiTest extends \PHPUnit_Framework_TestCase
     /**
      * Test case for updateReview
      *
-     * 리뷰를 수정합니다 (ON PURPOSE 10 SEC DELAY TO TEST PESSIMISTIC/OPTIMISTIC DB LOCK)..
+     * 리뷰를 수정합니다..
      *
      */
     public function testUpdateReview()

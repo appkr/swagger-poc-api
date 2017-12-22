@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**createReview**](ReviewApi.md#createReview) | **POST** /v1/products/{productId}/reviews | 새 리뷰를 등록합니다.
 [**deleteReview**](ReviewApi.md#deleteReview) | **DELETE** /v1/products/{productId}/reviews/{reviewId} | 리뷰를 삭제합니다.
 [**listReviews**](ReviewApi.md#listReviews) | **GET** /v1/products/{productId}/reviews | 상품에 대한 리뷰 목록을 조회합니다.
-[**updateReview**](ReviewApi.md#updateReview) | **PUT** /v1/products/{productId}/reviews/{reviewId} | 리뷰를 수정합니다 (ON PURPOSE 10 SEC DELAY TO TEST PESSIMISTIC/OPTIMISTIC DB LOCK).
+[**updateReview**](ReviewApi.md#updateReview) | **PUT** /v1/products/{productId}/reviews/{reviewId} | 리뷰를 수정합니다.
 
 
 # **createReview**
@@ -175,7 +175,7 @@ No authorization required
 # **updateReview**
 > \Appkr\SwaggerPocApi\Model\ReviewDto updateReview($authorization, $productId, $reviewId, $body)
 
-리뷰를 수정합니다 (ON PURPOSE 10 SEC DELAY TO TEST PESSIMISTIC/OPTIMISTIC DB LOCK).
+리뷰를 수정합니다.
 
 ### Example
 ```php

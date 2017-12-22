@@ -560,7 +560,7 @@ public class ProductApi {
     }
 
     /**
-     * 상품을 수정합니다 (ON PURPOSE 10 SEC DELAY TO TEST PESSIMISTIC/OPTIMISTIC DB LOCK).
+     * 상품을 수정합니다.
      * 
      * @param authorization 액세스 토큰 (required)
      * @param productId  (required)
@@ -574,7 +574,7 @@ public class ProductApi {
     }
 
     /**
-     * 상품을 수정합니다 (ON PURPOSE 10 SEC DELAY TO TEST PESSIMISTIC/OPTIMISTIC DB LOCK).
+     * 상품을 수정합니다.
      * 
      * @param authorization 액세스 토큰 (required)
      * @param productId  (required)
@@ -589,7 +589,7 @@ public class ProductApi {
     }
 
     /**
-     * 상품을 수정합니다 (ON PURPOSE 10 SEC DELAY TO TEST PESSIMISTIC/OPTIMISTIC DB LOCK). (asynchronously)
+     * 상품을 수정합니다. (asynchronously)
      * 
      * @param authorization 액세스 토큰 (required)
      * @param productId  (required)
