@@ -10,6 +10,8 @@ Name | Type | Description | Notes
 **description** | **String** | 상품 설명 | 
 **createdAt** | **String** | 최초 생성 시각 |  [optional]
 **updatedAt** | **String** | 최종 수정 시각 |  [optional]
+**id** | **Long** | ID |  [optional]
+**version** | **Integer** | 버전 |  [optional]
 
 
 

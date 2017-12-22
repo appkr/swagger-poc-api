@@ -27,7 +27,7 @@ import kr.appkr.swagger_poc_api.model.NewProductRequest;
 /**
  * ProductDto
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-22T15:01:40.460+09:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-22T15:22:50.443+09:00")
 public class ProductDto {
   @SerializedName("title")
   private String title = null;
@@ -46,6 +46,12 @@ public class ProductDto {
 
   @SerializedName("updated_at")
   private String updatedAt = null;
+
+  @SerializedName("id")
+  private Long id = null;
+
+  @SerializedName("version")
+  private Integer version = null;
 
   public ProductDto title(String title) {
     this.title = title;
@@ -155,6 +161,42 @@ public class ProductDto {
     this.updatedAt = updatedAt;
   }
 
+  public ProductDto id(Long id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * ID
+   * @return id
+  **/
+  @ApiModelProperty(example = "245134578", value = "ID")
+  public Long getId() {
+    return id;
+  }
+
+  public void setId(Long id) {
+    this.id = id;
+  }
+
+  public ProductDto version(Integer version) {
+    this.version = version;
+    return this;
+  }
+
+   /**
+   * 버전
+   * @return version
+  **/
+  @ApiModelProperty(example = "1", value = "버전")
+  public Integer getVersion() {
+    return version;
+  }
+
+  public void setVersion(Integer version) {
+    this.version = version;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -170,12 +212,14 @@ public class ProductDto {
         Objects.equals(this.price, productDto.price) &&
         Objects.equals(this.description, productDto.description) &&
         Objects.equals(this.createdAt, productDto.createdAt) &&
-        Objects.equals(this.updatedAt, productDto.updatedAt);
+        Objects.equals(this.updatedAt, productDto.updatedAt) &&
+        Objects.equals(this.id, productDto.id) &&
+        Objects.equals(this.version, productDto.version);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(title, stock, price, description, createdAt, updatedAt);
+    return Objects.hash(title, stock, price, description, createdAt, updatedAt, id, version);
   }
 
 
@@ -190,6 +234,8 @@ public class ProductDto {
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
     sb.append("    updatedAt: ").append(toIndentedString(updatedAt)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    version: ").append(toIndentedString(version)).append("\n");
     sb.append("}");
     return sb.toString();
   }

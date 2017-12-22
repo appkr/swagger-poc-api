@@ -23,11 +23,13 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
 import kr.appkr.swagger_poc_api.model.NewReviewRequest;
+import kr.appkr.swagger_poc_api.model.ProductDto;
+import kr.appkr.swagger_poc_api.model.UserDto;
 
 /**
  * ReviewDto
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-22T15:01:40.460+09:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-22T15:22:50.443+09:00")
 public class ReviewDto {
   @SerializedName("title")
   private String title = null;
@@ -40,6 +42,12 @@ public class ReviewDto {
 
   @SerializedName("updated_at")
   private String updatedAt = null;
+
+  @SerializedName("author")
+  private UserDto author = null;
+
+  @SerializedName("product")
+  private ProductDto product = null;
 
   public ReviewDto title(String title) {
     this.title = title;
@@ -113,6 +121,42 @@ public class ReviewDto {
     this.updatedAt = updatedAt;
   }
 
+  public ReviewDto author(UserDto author) {
+    this.author = author;
+    return this;
+  }
+
+   /**
+   * Get author
+   * @return author
+  **/
+  @ApiModelProperty(value = "")
+  public UserDto getAuthor() {
+    return author;
+  }
+
+  public void setAuthor(UserDto author) {
+    this.author = author;
+  }
+
+  public ReviewDto product(ProductDto product) {
+    this.product = product;
+    return this;
+  }
+
+   /**
+   * Get product
+   * @return product
+  **/
+  @ApiModelProperty(value = "")
+  public ProductDto getProduct() {
+    return product;
+  }
+
+  public void setProduct(ProductDto product) {
+    this.product = product;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -126,12 +170,14 @@ public class ReviewDto {
     return Objects.equals(this.title, reviewDto.title) &&
         Objects.equals(this.content, reviewDto.content) &&
         Objects.equals(this.createdAt, reviewDto.createdAt) &&
-        Objects.equals(this.updatedAt, reviewDto.updatedAt);
+        Objects.equals(this.updatedAt, reviewDto.updatedAt) &&
+        Objects.equals(this.author, reviewDto.author) &&
+        Objects.equals(this.product, reviewDto.product);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(title, content, createdAt, updatedAt);
+    return Objects.hash(title, content, createdAt, updatedAt, author, product);
   }
 
 
@@ -144,6 +190,8 @@ public class ReviewDto {
     sb.append("    content: ").append(toIndentedString(content)).append("\n");
     sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
     sb.append("    updatedAt: ").append(toIndentedString(updatedAt)).append("\n");
+    sb.append("    author: ").append(toIndentedString(author)).append("\n");
+    sb.append("    product: ").append(toIndentedString(product)).append("\n");
     sb.append("}");
     return sb.toString();
   }
