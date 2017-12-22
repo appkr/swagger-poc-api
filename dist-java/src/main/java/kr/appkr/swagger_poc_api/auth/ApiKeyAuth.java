@@ -18,7 +18,7 @@ import kr.appkr.swagger_poc_api.Pair;
 import java.util.Map;
 import java.util.List;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-22T14:18:43.519+09:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-22T15:01:40.460+09:00")
 public class ApiKeyAuth implements Authentication {
   private final String location;
   private final String paramName;

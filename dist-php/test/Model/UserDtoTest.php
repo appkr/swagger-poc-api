@@ -78,6 +78,13 @@ class UserDtoTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test attribute "name"
+     */
+    public function testPropertyName()
+    {
+    }
+
+    /**
      * Test attribute "email"
      */
     public function testPropertyEmail()
