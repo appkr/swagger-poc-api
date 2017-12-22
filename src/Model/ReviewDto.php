@@ -59,8 +59,8 @@ class ReviewDto implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'title' => 'string',
         'content' => 'string',
-        'createdAt' => '\DateTime',
-        'updatedAt' => '\DateTime'
+        'createdAt' => 'string',
+        'updatedAt' => 'string'
     ];
 
     /**
@@ -71,8 +71,8 @@ class ReviewDto implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'title' => null,
         'content' => null,
-        'createdAt' => 'date-time',
-        'updatedAt' => 'date-time'
+        'createdAt' => null,
+        'updatedAt' => null
     ];
 
     /**
@@ -286,7 +286,7 @@ class ReviewDto implements ModelInterface, ArrayAccess
     /**
      * Gets createdAt
      *
-     * @return \DateTime
+     * @return string
      */
     public function getCreatedAt()
     {
@@ -296,7 +296,7 @@ class ReviewDto implements ModelInterface, ArrayAccess
     /**
      * Sets createdAt
      *
-     * @param \DateTime $createdAt 최초 생성 시각
+     * @param string $createdAt 최초 생성 시각
      *
      * @return $this
      */
@@ -310,7 +310,7 @@ class ReviewDto implements ModelInterface, ArrayAccess
     /**
      * Gets updatedAt
      *
-     * @return \DateTime
+     * @return string
      */
     public function getUpdatedAt()
     {
@@ -320,7 +320,7 @@ class ReviewDto implements ModelInterface, ArrayAccess
     /**
      * Sets updatedAt
      *
-     * @param \DateTime $updatedAt 최종 수정 시각
+     * @param string $updatedAt 최종 수정 시각
      *
      * @return $this
      */

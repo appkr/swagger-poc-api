@@ -86,11 +86,11 @@ Class | Method | HTTP request | Description
 *ProductApi* | [**createProduct**](docs/Api/ProductApi.md#createproduct) | **POST** /v1/products | 새 상품을 등록합니다.
 *ProductApi* | [**deleteProduct**](docs/Api/ProductApi.md#deleteproduct) | **DELETE** /v1/products/{productId} | 상품을 삭제합니다.
 *ProductApi* | [**listProducts**](docs/Api/ProductApi.md#listproducts) | **GET** /v1/products | 상품 목록을 조회합니다.
-*ProductApi* | [**updateProduct**](docs/Api/ProductApi.md#updateproduct) | **PUT** /v1/products/{productId} | 상품을 수정합니다 (ON PURPOSE 10 SEC DELAY TO TEST PESSIMISTIC/OPTIMISTIC DB LOCK).
+*ProductApi* | [**updateProduct**](docs/Api/ProductApi.md#updateproduct) | **PUT** /v1/products/{productId} | 상품을 수정합니다.
 *ReviewApi* | [**createReview**](docs/Api/ReviewApi.md#createreview) | **POST** /v1/products/{productId}/reviews | 새 리뷰를 등록합니다.
 *ReviewApi* | [**deleteReview**](docs/Api/ReviewApi.md#deletereview) | **DELETE** /v1/products/{productId}/reviews/{reviewId} | 리뷰를 삭제합니다.
 *ReviewApi* | [**listReviews**](docs/Api/ReviewApi.md#listreviews) | **GET** /v1/products/{productId}/reviews | 상품에 대한 리뷰 목록을 조회합니다.
-*ReviewApi* | [**updateReview**](docs/Api/ReviewApi.md#updatereview) | **PUT** /v1/products/{productId}/reviews/{reviewId} | 리뷰를 수정합니다 (ON PURPOSE 10 SEC DELAY TO TEST PESSIMISTIC/OPTIMISTIC DB LOCK).
+*ReviewApi* | [**updateReview**](docs/Api/ReviewApi.md#updatereview) | **PUT** /v1/products/{productId}/reviews/{reviewId} | 리뷰를 수정합니다.
 
 
 ## Documentation For Models

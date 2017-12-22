@@ -61,8 +61,8 @@ class ProductDto implements ModelInterface, ArrayAccess
         'stock' => 'int',
         'price' => 'int',
         'description' => 'string',
-        'createdAt' => '\DateTime',
-        'updatedAt' => '\DateTime'
+        'createdAt' => 'string',
+        'updatedAt' => 'string'
     ];
 
     /**
@@ -75,8 +75,8 @@ class ProductDto implements ModelInterface, ArrayAccess
         'stock' => 'int32',
         'price' => 'int64',
         'description' => null,
-        'createdAt' => 'date-time',
-        'updatedAt' => 'date-time'
+        'createdAt' => null,
+        'updatedAt' => null
     ];
 
     /**
@@ -358,7 +358,7 @@ class ProductDto implements ModelInterface, ArrayAccess
     /**
      * Gets createdAt
      *
-     * @return \DateTime
+     * @return string
      */
     public function getCreatedAt()
     {
@@ -368,7 +368,7 @@ class ProductDto implements ModelInterface, ArrayAccess
     /**
      * Sets createdAt
      *
-     * @param \DateTime $createdAt 최초 생성 시각
+     * @param string $createdAt 최초 생성 시각
      *
      * @return $this
      */
@@ -382,7 +382,7 @@ class ProductDto implements ModelInterface, ArrayAccess
     /**
      * Gets updatedAt
      *
-     * @return \DateTime
+     * @return string
      */
     public function getUpdatedAt()
     {
@@ -392,7 +392,7 @@ class ProductDto implements ModelInterface, ArrayAccess
     /**
      * Sets updatedAt
      *
-     * @param \DateTime $updatedAt 최종 수정 시각
+     * @param string $updatedAt 최종 수정 시각
      *
      * @return $this
      */

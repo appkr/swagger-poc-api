@@ -104,7 +104,7 @@ class ProductApiTest extends \PHPUnit_Framework_TestCase
     /**
      * Test case for updateProduct
      *
-     * 상품을 수정합니다 (ON PURPOSE 10 SEC DELAY TO TEST PESSIMISTIC/OPTIMISTIC DB LOCK)..
+     * 상품을 수정합니다..
      *
      */
     public function testUpdateProduct()
