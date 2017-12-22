@@ -83,12 +83,12 @@ export default class ReviewDto {
     // Implement Timestamp interface:
     /**
     * 최초 생성 시각
-    * @member {Date} created_at
+    * @member {String} created_at
     */
     created_at = undefined;
 /**
     * 최종 수정 시각
-    * @member {Date} updated_at
+    * @member {String} updated_at
     */
     updated_at = undefined;
 

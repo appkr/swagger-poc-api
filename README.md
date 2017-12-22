@@ -99,11 +99,11 @@ Class | Method | HTTP request | Description
 *DbLockPoc.ProductApi* | [**createProduct**](docs/ProductApi.md#createProduct) | **POST** /v1/products | 새 상품을 등록합니다.
 *DbLockPoc.ProductApi* | [**deleteProduct**](docs/ProductApi.md#deleteProduct) | **DELETE** /v1/products/{productId} | 상품을 삭제합니다.
 *DbLockPoc.ProductApi* | [**listProducts**](docs/ProductApi.md#listProducts) | **GET** /v1/products | 상품 목록을 조회합니다.
-*DbLockPoc.ProductApi* | [**updateProduct**](docs/ProductApi.md#updateProduct) | **PUT** /v1/products/{productId} | 상품을 수정합니다 (ON PURPOSE 10 SEC DELAY TO TEST PESSIMISTIC/OPTIMISTIC DB LOCK).
+*DbLockPoc.ProductApi* | [**updateProduct**](docs/ProductApi.md#updateProduct) | **PUT** /v1/products/{productId} | 상품을 수정합니다.
 *DbLockPoc.ReviewApi* | [**createReview**](docs/ReviewApi.md#createReview) | **POST** /v1/products/{productId}/reviews | 새 리뷰를 등록합니다.
 *DbLockPoc.ReviewApi* | [**deleteReview**](docs/ReviewApi.md#deleteReview) | **DELETE** /v1/products/{productId}/reviews/{reviewId} | 리뷰를 삭제합니다.
 *DbLockPoc.ReviewApi* | [**listReviews**](docs/ReviewApi.md#listReviews) | **GET** /v1/products/{productId}/reviews | 상품에 대한 리뷰 목록을 조회합니다.
-*DbLockPoc.ReviewApi* | [**updateReview**](docs/ReviewApi.md#updateReview) | **PUT** /v1/products/{productId}/reviews/{reviewId} | 리뷰를 수정합니다 (ON PURPOSE 10 SEC DELAY TO TEST PESSIMISTIC/OPTIMISTIC DB LOCK).
+*DbLockPoc.ReviewApi* | [**updateReview**](docs/ReviewApi.md#updateReview) | **PUT** /v1/products/{productId}/reviews/{reviewId} | 리뷰를 수정합니다.
 
 
 ## Documentation for Models

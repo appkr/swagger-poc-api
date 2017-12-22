@@ -228,7 +228,7 @@ export default class ReviewApi {
      */
 
     /**
-     * 리뷰를 수정합니다 (ON PURPOSE 10 SEC DELAY TO TEST PESSIMISTIC/OPTIMISTIC DB LOCK).
+     * 리뷰를 수정합니다.
      * @param {String} authorization 액세스 토큰
      * @param {Number} productId 
      * @param {Number} reviewId 
