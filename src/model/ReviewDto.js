@@ -14,7 +14,9 @@
 
 import ApiClient from '../ApiClient';
 import NewReviewRequest from './NewReviewRequest';
+import ProductDto from './ProductDto';
 import Timestamp from './Timestamp';
+import UserDto from './UserDto';
 
 
 
@@ -62,10 +64,24 @@ export default class ReviewDto {
             
             NewReviewRequest.constructFromObject(data, obj);Timestamp.constructFromObject(data, obj);
 
+            if (data.hasOwnProperty('author')) {
+                obj['author'] = UserDto.constructFromObject(data['author']);
+            }
+            if (data.hasOwnProperty('product')) {
+                obj['product'] = ProductDto.constructFromObject(data['product']);
+            }
         }
         return obj;
     }
 
+    /**
+    * @member {module:model/UserDto} author
+    */
+    author = undefined;
+    /**
+    * @member {module:model/ProductDto} product
+    */
+    product = undefined;
 
 
     // Implement NewReviewRequest interface:

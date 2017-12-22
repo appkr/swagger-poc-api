@@ -54,6 +54,12 @@
       //expect(instance).to.be.a(DbLockPoc.UserDto);
     });
 
+    it('should have the property id (base name: "id")', function() {
+      // uncomment below and update the code to test the property id
+      //var instane = new DbLockPoc.UserDto();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));
