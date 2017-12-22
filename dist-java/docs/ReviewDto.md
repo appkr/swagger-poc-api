@@ -10,6 +10,8 @@ Name | Type | Description | Notes
 **updatedAt** | **String** | 최종 수정 시각 |  [optional]
 **author** | [**UserDto**](UserDto.md) |  |  [optional]
 **product** | [**ProductDto**](ProductDto.md) |  |  [optional]
+**id** | **Long** | ID |  [optional]
+**version** | **Integer** | 버전 |  [optional]
 
 
 
