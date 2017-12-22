@@ -30,7 +30,7 @@ import kr.appkr.swagger_poc_api.model.ProductDto;
 /**
  * ProductListResponse
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-23T00:08:38.899+09:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-23T00:35:43.003+09:00")
 public class ProductListResponse {
   @SerializedName("data")
   private List<ProductDto> data = new ArrayList<ProductDto>();
