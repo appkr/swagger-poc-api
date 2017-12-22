@@ -27,8 +27,11 @@ import kr.appkr.swagger_poc_api.model.NewUserRequest;
 /**
  * UserDto
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-22T14:18:43.519+09:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-22T15:01:40.460+09:00")
 public class UserDto {
+  @SerializedName("name")
+  private String name = null;
+
   @SerializedName("email")
   private String email = null;
 
@@ -40,6 +43,24 @@ public class UserDto {
 
   @SerializedName("updated_at")
   private String updatedAt = null;
+
+  public UserDto name(String name) {
+    this.name = name;
+    return this;
+  }
+
+   /**
+   * 사용자 이름
+   * @return name
+  **/
+  @ApiModelProperty(example = "User", value = "사용자 이름")
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
 
   public UserDto email(String email) {
     this.email = email;
@@ -123,7 +144,8 @@ public class UserDto {
       return false;
     }
     UserDto userDto = (UserDto) o;
-    return Objects.equals(this.email, userDto.email) &&
+    return Objects.equals(this.name, userDto.name) &&
+        Objects.equals(this.email, userDto.email) &&
         Objects.equals(this.password, userDto.password) &&
         Objects.equals(this.createdAt, userDto.createdAt) &&
         Objects.equals(this.updatedAt, userDto.updatedAt);
@@ -131,7 +153,7 @@ public class UserDto {
 
   @Override
   public int hashCode() {
-    return Objects.hash(email, password, createdAt, updatedAt);
+    return Objects.hash(name, email, password, createdAt, updatedAt);
   }
 
 
@@ -140,6 +162,7 @@ public class UserDto {
     StringBuilder sb = new StringBuilder();
     sb.append("class UserDto {\n");
     
+    sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("    password: ").append(toIndentedString(password)).append("\n");
     sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");

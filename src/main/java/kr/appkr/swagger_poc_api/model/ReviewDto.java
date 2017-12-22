@@ -27,7 +27,7 @@ import kr.appkr.swagger_poc_api.model.NewReviewRequest;
 /**
  * ReviewDto
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-22T14:18:43.519+09:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-22T15:01:40.460+09:00")
 public class ReviewDto {
   @SerializedName("title")
   private String title = null;
